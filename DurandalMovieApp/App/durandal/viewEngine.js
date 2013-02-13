@@ -37,6 +37,8 @@
         pluginPath: 'text',
         createView: function(name, markup) {
             var element = parseHTML(markup);
+            $(element).hide();
+            $(element).appendTo('body');
             element.setAttribute('data-view', name);
             return element;
         }
