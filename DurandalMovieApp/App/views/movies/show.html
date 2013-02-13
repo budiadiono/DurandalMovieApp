@@ -5,16 +5,9 @@
             <th>Director</th>
         </tr>
     </thead>
-    <tbody data-bind="template:{name:'movie-item-template', foreach:movies}">
+    <tbody data-bind="foreach:movies">
+        <tr data-bind="compose:{view:'movies/movie-item'}"></tr>
     </tbody>
 </table>
 
 <a href="#/movies/add">Add Movie</a>
-
-<script type="text/html" id="movie-item-template">
-    <tr>
-        <td data-bind="text:title"></td>
-        <td data-bind="text:director"></td>
-        <td><a data-bind="attr:{href:'#/movies/details/'+id}">Details</a></td>
-    </tr>
-</script>
