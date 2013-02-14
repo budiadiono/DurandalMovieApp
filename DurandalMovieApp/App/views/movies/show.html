@@ -6,7 +6,7 @@
         </tr>
     </thead>
     <tbody data-bind="foreach:movies">
-        <tr data-bind="compose:{view:'movies/movie-item'}"></tr>
+        <!-- ko compose: 'movies/movie-item.html' --><!--/ko-->
     </tbody>
 </table>
 
