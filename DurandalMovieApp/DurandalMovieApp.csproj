@@ -155,16 +155,23 @@
     <Content Include="App\durandal\viewModel.js" />
     <Content Include="App\durandal\viewModelBinder.js" />
     <Content Include="App\durandal\widget.js" />
+    <Content Include="App\main-built.js" />
     <Content Include="App\main.js" />
     <Content Include="App\repositories\moviesRepository.js" />
+    <Content Include="App\viewmodels\flickr.js" />
     <Content Include="App\viewmodels\movies\add.js" />
     <Content Include="App\viewmodels\movies\details.js" />
     <Content Include="App\viewmodels\movies\show.js" />
     <Content Include="App\viewmodels\shell.js" />
+    <Content Include="App\viewmodels\welcome.js" />
+    <Content Include="App\views\detail.html" />
+    <Content Include="App\views\flickr.html" />
     <Content Include="App\views\movies\add.html" />
     <Content Include="App\views\movies\details.html" />
+    <Content Include="App\views\movies\movie-item.html" />
     <Content Include="App\views\movies\show.html" />
     <Content Include="App\views\shell.html" />
+    <Content Include="App\views\welcome.html" />
     <Content Include="Content\app.css" />
     <Content Include="Content\bootstrap-responsive.css" />
     <Content Include="Content\bootstrap-responsive.min.css" />
@@ -273,9 +280,9 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Durandal\Index.cshtml" />
     <Content Include="Views\Durandal\_splash.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
