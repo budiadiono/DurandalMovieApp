@@ -16,6 +16,7 @@ namespace DurandalMovieApp {
 //          .Include("~/Scripts/knockout-2.2.1.js")
 //          .Include("~/Scripts/sammy-0.7.4.min.js")
           .Include("~/Scripts/bootstrap.min.js")
+          .Include("~/Scripts/underscore-min.js")
         );
 
       bundles.Add(
