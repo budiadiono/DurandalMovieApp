@@ -6,8 +6,10 @@
     return {
         movieToAdd: {
             title: ko.observable(),
-            director: ko.observable()
+            director: ko.observable()            
         },
+        
+        userPath: ko.observable(),
  
         activate: function () {
             this.movieToAdd.title("");
@@ -31,7 +33,7 @@
             this._movieAdded = true;
 
             // return to list of movies
-            router.navigateTo("#/movies/show");
+            router.navigateTo("#/"+ this.userPath() +"/movies/show");
         }
     };
 

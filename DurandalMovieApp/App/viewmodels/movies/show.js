@@ -4,8 +4,9 @@
 
     return {
         movies: ko.observable(),
+        userPath: ko.observable(),
 
-        activate: function() {
+        activate: function () {
             this.movies(moviesRepository.listMovies());
         }
     };

@@ -4,7 +4,8 @@
     return {
         router: router,
         activate: function () {
-            return router.activate('movies/show');
+            router.replaceLocation('#/budi/ghost-protocol/movies/show');
+            return router.activate();
         }
     };
 });

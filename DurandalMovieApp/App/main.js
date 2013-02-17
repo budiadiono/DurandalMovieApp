@@ -21,9 +21,18 @@ define(function (require) {
 
         //configure routing
         router.useConvention();
-        router.mapNav("movies/show");
-        router.mapNav("movies/add");
-        router.mapNav("movies/details/:id");
+        router.mapNav({ url: "/:user/:group/movies/show", hash: "/:user/:group/movies/show", moduleId: 'viewmodels/movies/show' });
+        router.mapNav({ url: "/:user/:group/movies/add", hash: "/:user/:group/movies/add", moduleId: 'viewmodels/movies/add'});
+        router.mapNav({ url: "/:user/:group/movies/details/:id", hash: "/:user/:group/movies/details/:id", moduleId: 'viewmodels/movies/details' });
+
+        router.activeItem.settings.beforeActivate = function (newItem, params) {
+            newItem.userPath(params.user + '/' + params.group);
+            return newItem;
+        };
+
+        //router.onNavigationComplete = function(routeInfo, params, newItem) {
+        //    newItem.userPath(params.user + '/' + params.group);
+        //};
 
         app.adaptToDevice();
 

@@ -7,6 +7,8 @@
             title: ko.observable(),
             director: ko.observable()
         },
+        
+        userPath: ko.observable(),
 
         activate: function (context) {
             // Grab movie from repository
